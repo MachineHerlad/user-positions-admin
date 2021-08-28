@@ -1,0 +1,51 @@
+<!-- Modal -->
+<div class="modal fade" id="positionModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+            aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">添加职位</h4>
+      </div>
+      <div class="modal-body">
+
+        <!-- general form elements -->
+        <div class="box box-primary">
+          <!-- /.box-header -->
+          <!-- form start -->
+          <form role="form" enctype="multipart/form-data" id="positionForm">
+            <div class="box-body">
+              <div class="form-group">
+                <label for="companyLogo">公司Logo</label>
+                <span>（图片格式必须为png/jpg/gif，切不得大于200KB）</span>
+                <input type="file" name="companyLogo" class="form-control" id="companyLogo">
+              </div>
+              <div class="form-group">
+                <label for="componyName">公司名称</label>
+                <input type="text" name="componyName" class="form-control" id="componyName" placeholder="请输入公司名称">
+              </div>
+              <div class="form-group">
+                <label for="positionName">职位名称</label>
+                <input type="text" name="positionName" class="form-control" id="positionName" placeholder="请输入职位名称">
+              </div>
+              <div class="form-group">
+                <label for="city">城市</label>
+                <input type="text" name="city" class="form-control" id="city" placeholder="请输入城市">
+              </div>
+              <div class="form-group">
+                <label for="salary">薪资</label>
+                <input type="text" name="salary" class="form-control" id="salary" placeholder="请输入职位薪资">
+              </div>
+            </div>
+          </form>
+        </div>
+        <!-- /.box -->
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal" id="positionClose">取消</button>
+        <button type="button" class="btn btn-primary" id="positionSave">添加</button>
+      </div>
+    </div>
+  </div>
+</div>

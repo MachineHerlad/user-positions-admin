@@ -1,0 +1,26 @@
+<div class="box" id="addPositionTwo">
+    <!-- /.box-header -->
+    <div class="box-header">
+        <button type="button" class="btn btn-block btn-info btn01" data-toggle="modal" data-target="#positionModal"
+            id="addPosition">添加</button>
+    </div>
+    <div class="box-body">
+        <table class="table table-bordered">
+            <tr>
+                <th style="width: 15px">#</th>
+                <th style="width: 50px">公司Logo</th>
+                <th>公司名称</th>
+                <th>职位名称</th>
+                <th>城市</th>
+                <th>薪资</th>
+                <th style="width: 200px">发布时间</th>
+                <th style="width: 200px">操作</th>
+            </tr>
+            <tbody id="positionShow"></tbody>
+        </table>
+    </div>
+    <!-- /.box-body -->
+    <div class="box-footer clearfix" id="userPaging">
+    </div>
+</div>
+<!-- /.box -->

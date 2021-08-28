@@ -1,0 +1,16 @@
+{{each data}}
+<tr>
+    <td>{{$index+1}}</td>
+    <td><img src="http://localhost:3000/images/{{$value.companyLogo}}"
+            width="50px" height="40px" alt=""></td>
+    <td>{{$value.componyName}}</td>
+    <td>{{$value.positionName}}</td>
+    <td>{{$value.city}}</td>
+    <td>{{$value.salary}}</td>
+    <td>{{$value.createTime}}</td>
+    <td class="btn-positions">
+        <button data-id="{{$value._id}}" class="btn positions-update btn-block btn-info btn-positions1" data-toggle="modal" data-target="#positionModal-update">编辑</button>
+        <button class="btn btn02 btn-block btn-danger btn-positions2" data-id="{{$value._id}}">删除</button>
+    </td>
+</tr>
+{{/each}}
