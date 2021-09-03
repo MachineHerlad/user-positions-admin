@@ -25,7 +25,12 @@ const update = (data) => {
     return positions.deleteOne({ _id : data.id, data})
 }
 
+const findone = (id) => {
+    return positions.findOne({_id:id})
+}
+
 exports.add = add
 exports.list = list
 exports.remove = remove
 exports.update = update
+exports.findone = findone

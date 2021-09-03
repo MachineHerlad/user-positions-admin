@@ -39,6 +39,19 @@ exports.list = async (req, res, next) => {
     }
 }
 
+exports.listone = async (req, res, next) => {
+    let result = await positionsModel.findone(req.body.id)
+    if(result) {
+        res.JSON(result)
+    } else {
+        res.render('fail', {
+            data:JSON.stringify({
+                message:'数据获取失败。'
+            })
+        })
+    }
+}
+
 exports.remove = async (req, res, next) => {
 
     res.set('content-type', 'application/json; charset = utf-8')
@@ -68,7 +81,7 @@ exports.remove = async (req, res, next) => {
     
 }
 
-exports.uodate = async (req, res, next) => {
+exports.update = async (req, res, next) => {
 
     res.set('content-type', 'application/json; charset = utf-8')
 
