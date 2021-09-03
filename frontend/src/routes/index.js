@@ -1,5 +1,6 @@
 import SMERouter from 'sme-router'
-import {login, index} from '../controllers/user/index.js'
+import { index } from '../controllers/index.js'
+import { login } from '../controllers/sign-in'
 import { positionsList } from '../controllers/positions/positions-list'
 // import {routerGuard as rgModel} from '../models/router-guard'
 

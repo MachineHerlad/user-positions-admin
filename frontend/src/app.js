@@ -1,3 +1,14 @@
 import router from './routes'
 
-router.go('/index')
+
+$.ajax({
+    url:'api/users/isAuth',
+    success(result){
+        if(result.ret) {
+            router.go('./index')
+        } else {
+            router.go('./')
+          
+        }
+    }
+})

@@ -17,7 +17,7 @@ const _handleSubmit = (router) => {
 }
 
 
-const login = (router) => {
+export const login = (router) => {
     return (req, res, next) => {
         res.render(htmlLogin)
 

@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "npx webpack",
-    "server": "npx webpack-dev-server"
+    "build": "webpack",
+    "server": "webpack-dev-server"
   },
   "author": "",
   "license": "ISC",
